@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#project-part {
+    margin-top: 100px;
+}
+
+#project-part .title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#project-part .title h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #353535;
+    font-family: tahoma;
+    text-transform: capitalize;
+}
+
+#project-part .title p {
+    font-size: 16px;
+    color: #777;
+    font-family: sans-serif;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#project-part .no-mar {
+    margin: 0;
+}
+
+#project-part .button_part {
+    margin-bottom: 50px;
+}
+
+#project-part ul {
+    text-align: center;
+}
+
+#project-part ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777777;
+    font-family: tahoma;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    padding-bottom: 5px;
+}
+
+#project-part .project_item .item {
+    width: 471px;
+    margin-top: 5px;
+    position: relative;
+    cursor: crosshair;
+
+}
+
+#project-part .project_item .item img {
+    width: 100%;
+    height: 100%;
+}
+
+#project-part .project_item .item .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .8);
+    transition: all linear .3s;
+    opacity: 0;
+}
+
+
+#project-part .project_item .item .text {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all linear .3s;
+    opacity: 0;
+}
+
+#project-part .project_item .item .text a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #353535;
+    font-family: tahoma;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#project-part .project_item .item .overlay::after {
+    width: 400px;
+    height: 312px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    border: 10px solid #ffa726;
+}
+
+#project-part .project_item .item .text span {
+    font-size: 14px;
+    color: #666;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 600
+}
+
+#project-part .project_item .item:hover .overlay {
+    opacity: 1;
+}
+
+#project-part .project_item .item:hover .text {
+    top: 50%;
+    opacity: 1;
+}
+
+#project-part .mixitup-control-active{
+    color: #e65100;
+    border-color: #e65100;
+}
